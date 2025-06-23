@@ -39,7 +39,7 @@ const GetUserHistory = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 space-y-8">
-      {/* Header Card */}
+
       <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl flex flex-col items-center space-y-6">
         <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-500 text-center">
           User Chart History
@@ -57,7 +57,6 @@ const GetUserHistory = () => {
         </div>
       </div>
 
-      {/* Chart Cards */}
       {userData?.chartDetails?.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {userData.chartDetails.map((chart, idx) => (

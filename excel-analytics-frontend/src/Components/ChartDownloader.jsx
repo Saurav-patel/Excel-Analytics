@@ -1,4 +1,4 @@
-// ChartDownloadWrapper.jsx
+
 import { useRef } from "react"
 import html2canvas from "html2canvas"
 import { jsPDF } from "jspdf"
@@ -30,8 +30,6 @@ const ChartDownloadWrapper = ({ type, canvasId = "chart-canvas", children, onDow
         pdf.addImage(image, "PNG", 10, 10, 190, 0)
         pdf.save("chart.pdf")
       }
-
-      // ✅ Call the parent callback after downloading
       if (onDownload && typeof onDownload === "function") {
         await onDownload()
       }

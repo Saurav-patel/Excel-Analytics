@@ -86,7 +86,7 @@ const UserDashboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 p-6 space-y-8">
-      {/* Header */}
+
       <div className="bg-white/80 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl flex flex-col items-center space-y-6 relative">
         <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-500 text-center">
           Welcome {user.username || "User"}
@@ -120,12 +120,10 @@ const UserDashboard = () => {
         </div>
       </div>
 
-      {/* History */}
       <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600 mb-4">
         📊 Your Charts History
       </h3>
 
-      {/* Charts Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCharts.map((chart, index) => {
           const ChartComponent = chartComponents[chart.chartType?.toLowerCase()] || Bar

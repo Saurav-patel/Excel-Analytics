@@ -15,7 +15,6 @@ import {
 } from "chart.js"
 import { useNavigate } from "react-router-dom"
 
-// Register chart elements
 ChartJS.register(
   CategoryScale,
   LinearScale,

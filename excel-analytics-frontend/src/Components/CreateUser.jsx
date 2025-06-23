@@ -41,7 +41,6 @@ const CreateUser = () => {
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-          {/* Username */}
           <div>
             <label className="block text-gray-700 mb-1">Username</label>
             <input
@@ -52,7 +51,6 @@ const CreateUser = () => {
             {errors.username && <p className="text-rose-500 text-sm mt-1">{errors.username.message}</p>}
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-gray-700 mb-1">Email</label>
             <input
@@ -64,7 +62,6 @@ const CreateUser = () => {
             {errors.email && <p className="text-rose-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
 
-          {/* Password */}
           <div>
             <label className="block text-gray-700 mb-1">Password</label>
             <input
@@ -79,7 +76,6 @@ const CreateUser = () => {
             {errors.password && <p className="text-rose-500 text-sm mt-1">{errors.password.message}</p>}
           </div>
 
-          {/* Role */}
           <div>
             <label className="block text-gray-700 mb-1">Role</label>
             <select
@@ -92,7 +88,6 @@ const CreateUser = () => {
             </select>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             disabled={isSubmitting}
