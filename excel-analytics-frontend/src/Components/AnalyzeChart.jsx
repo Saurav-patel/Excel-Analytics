@@ -119,7 +119,11 @@ const AnalyzeChart = () => {
   }
 
   if (loading) {
-    return <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50 flex items-center justify-center"><p className="text-xl text-gray-500">Loading chart data...</p></div>
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="relative w-20 h-20 mx-auto border-4 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    )
   }
 
   if (!chartData || !chart2d) {
