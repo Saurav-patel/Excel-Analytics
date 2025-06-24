@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "saurav-patel",
   "type": "module",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
     "start": "node Server.js",
     "dev": "nodemon -r dotenv/config --experimental-json-modules server.js",
