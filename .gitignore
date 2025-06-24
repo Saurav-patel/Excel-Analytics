@@ -1,4 +1,4 @@
 excel-analytics-backend/.env
 excel-analytics-frontend/.env
-excel-analytics-backend/node_modules
-excel-analytics-frontend/node_modules
+excel-analytics-backend/node_modules/
+excel-analytics-frontend/node_modules/
